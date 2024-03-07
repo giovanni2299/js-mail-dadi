@@ -20,13 +20,18 @@ userShot.addEventListener('click' ,function(){
 
     console.log('number user: ', + userNumber , 'number Laptop: ' ,+ randomNumbersLaptop );
 
-
+    //SE user ha il numero più alto del laptop allora vince
     if(userNumber > numberLaptop){
         console.log('YOU WIN! 🥳')
+        document.getElementById('showResult').innerHTML += '<div class="result--win">YOU WIN! 🥳</div>'
+        //ALTRIMENTI SE laptop ha il numero più alto del user allora vince laptop
     } else if(userNumber < numberLaptop ){
         console.log('YOU LOSE ! 🥲')
+        document.getElementById('showResult').innerHTML += '<div class="result--lose">YOU LOSE ! 🥲</div>'
+        //ALTRIMENTI se i numeri sono uguali allora è patta
     } else{
         console.log('TIE ! 🤝')
+        document.getElementById('showResult').innerHTML += '<div class="result--tie">TIE ! 🤝</div>'
     }
 
 })

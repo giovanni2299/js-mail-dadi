@@ -1,0 +1,16 @@
+#showResult{
+    font-size: 40px;
+}
+
+.result--win{
+    color: rgb(3, 251, 3);
+}
+
+.result--lose{
+    color: rgb(249, 69, 69);
+}
+
+.result--tie{
+    color: rgb(255, 255, 255);
+}
+
