@@ -40,5 +40,7 @@ userShot.addEventListener('click' ,function(){
     }
 
 })
+
+
 //creo una variabile per generare un numero random per il computer
 
